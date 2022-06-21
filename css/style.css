@@ -7,7 +7,7 @@ ul { list-style: none;
 }
 h1, h2, h3, h4, h5{ color: #fff;}
 a { color:white; text-decoration: none;}
-p{margin: 05rem 0 ;} /*16px = 1 Rem(base)*/
+p{margin: 0.5rem 0 ;} /*16px = 1 Rem(base)*/
 img{ max-width: 100%; height: auto;}
 
 
@@ -43,18 +43,43 @@ img{ max-width: 100%; height: auto;}
     margin-left: 0.5rem;
     transform: rotate(-45deg);
     -webkit-transform: rotate(-45deg);
+}
 
-
+.btn-outline{
+    border: 1px solid #fff;
+    background-color: transparent;
+    padding: 1rem 1.25rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
 
 }
+
 .btn-xl{
     font-size: 1.8rem;
     padding: 1.2rem 2rem;
     text-transform: uppercase;
-    
-
 
 }
+/*Text*/
+.text-xl{
+    font-size: 3.1rem;
+    line-height: 1.1;
+    margin-bottom: 0.5rem;
+    color: #fff;
+}
+.text-lg{
+    font-size: 1.6rem;
+    line-height: 1.3rem;
+    margin: 1.5rem 1rem 1.5rem 0;
+    color: #fff;
+}
+.text-center{
+    text-align: center;
+}
+
+
+
+
 /*Header*/
 .header{
     width: 100%;
@@ -121,4 +146,35 @@ img{ max-width: 100%; height: auto;}
     font-weight: 400;
     margin: 0 0 2rem;
     line-height: 1.25 ;
+}
+/*Content*/
+
+.content{
+    width: 100%;
+    border-bottom: 8px solid #222;
+}
+.content::after{
+   content: "";
+   display: table;
+   clear: both;
+
+}
+.content-inner{
+    max-width: 1200px;
+    margin: auto;
+    overflow: hidden;
+    padding: 5rem 2rem;
+}
+.content-inner::after{
+    content: "";
+   display: table;
+   clear: both;
+}
+.content-inner .col{
+    width: 50%;
+    float: left;
+}
+.content-img{
+    padding: 0 6%;
+    text-align: center;
 }
